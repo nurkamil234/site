@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой расширенный сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+        }
+        header .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        header .btn:hover {
+            background: #0056b3;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .about, .services, .gallery, .contact {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .services .card {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .services .card h3 {
+            margin-top: 0;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact form button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background: #0056b3;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать!</h1>
+        <p>Ваш путь к успеху начинается здесь</p>
+        <a href="#about" class="btn">Узнать больше</a>
+    </header>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>О нас</h2>
+        <p>Мы предлагаем высококачественные услуги для вашего бизнеса. Наша команда экспертов готова помочь вам в достижении ваших целей.</p>
+    </section>
+    <section id="services" class="services">
+        <h2>Наши услуги</h2>
+        <div class="card">
+            <h3>Веб-разработка</h3>
+            <p>Создание современных и функциональных сайтов.</p>
+        </div>
+        <div class="card">
+            <h3>Дизайн</h3>
+            <p>Уникальный и стильный дизайн для вашего бренда.</p>
+        </div>
+        <div class="card">
+            <h3>Маркетинг</h3>
+            <p>Эффективные стратегии продвижения.</p>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Галерея</h2>
+        <img src="https://via.placeholder.com/300" alt="Пример 1">
+        <img src="https://via.placeholder.com/300" alt="Пример 2">
+        <img src="https://via.placeholder.com/300" alt="Пример 3">
+    </section>
+    <section id="contact" class="contact">
+        <h2>Связаться с нами</h2>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Мой сайт. Все права защищены. | <a href="#top">Наверх</a></p>
+    </footer>
+</body>
+</html>
+
